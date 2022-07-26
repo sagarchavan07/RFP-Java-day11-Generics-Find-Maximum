@@ -1,8 +1,7 @@
 package com.bridgelabz;
 
-public class FindMaximumMain {
-
-    static <K extends Comparable>K findMaximum(K n1, K n2, K n3){
+public class FindMaximumMain<k extends Comparable> {
+    static K findMaximum(K n1, K n2, K n3){
         K max=n1;
         if (n2.compareTo(max) > 0) max=n2;
         if (n3.compareTo(max) > 0) max=n3;
